@@ -12,7 +12,8 @@
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "vercel": "^25.1.0"
   },
   "engines": {
     "node": "^14"

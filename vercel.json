@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "development",
+    "ORDER_SERVICE_URL":"https://orders-service.vercel.app/api/v1/orders",
+    "INVENTORY_SERVICE_URL": "http://localhost:3000/api/v1"
+  },
+  "routes": [
+    { "handle": "filesystem" },
+    {
+      "src": "/.*",
+      "dest": "server.js"
+    }
+  ]
+}
